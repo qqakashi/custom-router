@@ -25,17 +25,17 @@ function Router(props: RouterPathParams) {
 }
 
  
-const FirstPageKey = "monitoring";
+const FirstPageKey = "tab1";
 export default function Home(props: CompProps){
     const [routerList, setRouterList] = useState<routerListInter[][]>([[{name:FirstPageKey}]]);
     const [tabIndex, setTabIndex] = useState<number>(0);
     const [activePageKey, setActivePageKey] = useState<string>(FirstPageKey);
     const [tabsCenter, setTabsCenter] = useState<TabsProps['items']>([
-        {key: "monitoring", label: '', children: <CompRoot routeKey="monitoring" />},
-        {key: "history", label: '', children: <CompRoot routeKey="history" />},
-        {key: "report-forms", label: '', children: <CompRoot routeKey="report-forms" />},
-        {key: "log", label: '', children: <CompRoot routeKey="log" />},
-        {key: "system", label: '', children: <CompRoot routeKey="system" />}
+        {key: "tab1", label: '', children: <CompRoot routeKey="tab1" />},
+        {key: "tab2", label: '', children: <CompRoot routeKey="tab2" />},
+        {key: "tab3", label: '', children: <CompRoot routeKey="tab3" />},
+        {key: "tab4", label: '', children: <CompRoot routeKey="tab4" />},
+        {key: "tab5", label: '', children: <CompRoot routeKey="tab5" />}
     ]);
     const [pageParams, setPageParams] = useState<Record<string, any>>();
 
