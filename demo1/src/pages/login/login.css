@@ -1,0 +1,37 @@
+.login{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login_bg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_bg{
+    background-repeat: no-repeat;
+    width: 900rem;
+    background-size: contain;
+    height: 250rem;
+    position:absolute;
+    z-index:0
+}
+
+.login_form{
+    width: 400rem;
+    padding: 20rem 80rem 20rem 0;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 10px;
+    border: 1px solid rgb(16, 16, 124);
+    margin-left: 150rem;
+}
